@@ -1,0 +1,24 @@
+BoundedContext gestionAlquileres
+BoundedContext gestionClientes
+BoundedContext gestionPagos
+BoundedContext Seguridad
+
+ContextMap SistemaDeAlquilerDeVehiculos{
+
+contains gestionAlquileres
+contains gestionClientes
+contains gestionPagos
+contains Seguridad
+ 
+gestionClientes -> gestionAlquileres
+gestionClientes -> gestionPagos
+Seguridad Shared-Kernel gestionPagos
+gestionAlquileres Customer-Supplier gestionClientes
+
+
+}
+Domain SistemaDeAlquilerDeVehiculos{
+    Subdomain gestionPagos{
+    type CORE_DOMAIN 
+    }
+}
