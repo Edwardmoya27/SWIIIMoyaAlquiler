@@ -1,21 +1,24 @@
 digraph "ContextMapGraph" {
 graph ["imagepath"="/tmp/GraphvizJava"]
-"Seguridad" ["margin"="0.3","orientation"="260","shape"="egg","fontsize"="16","style"="bold","label"="Seguridad\n","fontname"="sans-serif"]
-"gestionPagos" ["margin"="0.3","orientation"="123","shape"="egg","fontsize"="16","style"="bold","label"="gestionPagos\n","fontname"="sans-serif"]
-"gestionAlquileres" ["margin"="0.3","orientation"="98","shape"="egg","fontsize"="16","style"="bold","label"="gestionAlquileres\n","fontname"="sans-serif"]
-"gestionClientes" ["margin"="0.3","orientation"="21","shape"="egg","fontsize"="16","style"="bold","label"="gestionClientes\n","fontname"="sans-serif"]
+"Seguridad" ["margin"="0.3","orientation"="34","shape"="egg","fontsize"="16","style"="bold","label"="Seguridad\n","fontname"="sans-serif"]
+"gestionPagos" ["margin"="0.3","orientation"="79","shape"="egg","fontsize"="16","style"="bold","label"="gestionPagos\n","fontname"="sans-serif"]
+"gestionAlquileres" ["margin"="0.3","orientation"="29","shape"="egg","fontsize"="16","style"="bold","label"="gestionAlquileres\n","fontname"="sans-serif"]
+"gestionVehiculos" ["margin"="0.3","orientation"="122","shape"="egg","fontsize"="16","style"="bold","label"="gestionVehiculos\n","fontname"="sans-serif"]
+"gestionClientes" ["margin"="0.3","orientation"="49","shape"="egg","fontsize"="16","style"="bold","label"="gestionClientes\n","fontname"="sans-serif"]
 "Seguridad" -> "gestionPagos" ["fontsize"="12","style"="bold","label"="Shared Kernel","dir"="none","fontname"="sans-serif"]
-"gestionClientes" -> "gestionAlquileres" ["headlabel"=<<table cellspacing="0" cellborder="0" border="0">
-<tr><td bgcolor="white">D</td></tr>
-</table>>,"labeldistance"="0","fontsize"="12","taillabel"=<<table cellspacing="0" cellborder="0" border="0">
-<tr><td bgcolor="white">U</td></tr>
-</table>>,"style"="bold","label"="Customer/Supplier","dir"="none","fontname"="sans-serif"]
-"gestionClientes" -> "gestionPagos" ["headlabel"=<<table cellspacing="0" cellborder="0" border="0">
+"gestionPagos" -> "gestionAlquileres" ["headlabel"=<<table cellspacing="0" cellborder="0" border="0">
 <tr><td bgcolor="white">D</td></tr>
 </table>>,"labeldistance"="0","fontsize"="12","taillabel"=<<table cellspacing="0" cellborder="0" border="0">
 <tr><td bgcolor="white">U</td></tr>
 </table>>,"style"="bold","label"="                                        ","dir"="none","fontname"="sans-serif"]
+"gestionAlquileres" -> "gestionVehiculos" ["fontsize"="12","style"="bold","label"="Shared Kernel","dir"="none","fontname"="sans-serif"]
+"gestionAlquileres" -> "gestionClientes" ["fontsize"="12","style"="bold","label"="Partnership","dir"="none","fontname"="sans-serif"]
 "gestionClientes" -> "gestionAlquileres" ["headlabel"=<<table cellspacing="0" cellborder="0" border="0">
+<tr><td bgcolor="white">D</td></tr>
+</table>>,"labeldistance"="0","fontsize"="12","taillabel"=<<table cellspacing="0" cellborder="0" border="0">
+<tr><td bgcolor="white">U</td></tr>
+</table>>,"style"="bold","label"="                                        ","dir"="none","fontname"="sans-serif"]
+"gestionClientes" -> "gestionPagos" ["headlabel"=<<table cellspacing="0" cellborder="0" border="0">
 <tr><td bgcolor="white">D</td></tr>
 </table>>,"labeldistance"="0","fontsize"="12","taillabel"=<<table cellspacing="0" cellborder="0" border="0">
 <tr><td bgcolor="white">U</td></tr>
